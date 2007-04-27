@@ -4,7 +4,7 @@
 Name: liblazy
 Summary: Liblazy - D-Bus methods provided for convenience
 Version: 0.1.1
-Release: %mkrel 2
+Release: %mkrel 3
 License: LGPL
 Group: Development/Libraries
 Source: %{name}-%{version}.tar.bz2
@@ -45,6 +45,7 @@ information from HAL or asking PolicyKit for a privilege.
 Summary:  %{summary}
 Group: %{group}
 Provides: %name-devel
+Requires: %{lib_name} = %{version}
 
 %description -n %{lib_name}-devel
 Liblazy is a simple and easy to use library that provides convenient
