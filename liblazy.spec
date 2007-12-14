@@ -1,10 +1,11 @@
-%define lib_major 0
+%define lib_major 1
 %define lib_name %mklibname lazy %{lib_major}
+%define lib_name_devel %mklibname lazy -d
 
 Name: liblazy
 Summary: Liblazy - D-Bus methods provided for convenience
-Version: 0.1.1
-Release: %mkrel 3
+Version: 0.2
+Release: %mkrel 1
 License: LGPL
 Group: Development/Libraries
 Source: %{name}-%{version}.tar.bz2
@@ -41,18 +42,19 @@ information from HAL or asking PolicyKit for a privilege.
 
 #--------------------------------------------------------------------
 
-%package -n %{lib_name}-devel
+%package -n %{lib_name_devel}
 Summary:  %{summary}
 Group: %{group}
 Provides: %name-devel
 Requires: %{lib_name} = %{version}
+Obsoletes: %{_lib}lazy0-devel
 
-%description -n %{lib_name}-devel
+%description -n %{lib_name_devel}
 Liblazy is a simple and easy to use library that provides convenient
 functions for sending messages over the D-Bus daemon, querying
 information from HAL or asking PolicyKit for a privilege.
 
-%files -n %{lib_name}-devel
+%files -n %{lib_name_devel}
 %defattr(-,root,root)
 %_libdir/liblazy.so
 %_libdir/liblazy.la
