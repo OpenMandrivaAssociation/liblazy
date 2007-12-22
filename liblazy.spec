@@ -7,7 +7,7 @@ Summary: Liblazy - D-Bus methods provided for convenience
 Version: 0.2
 Release: %mkrel 1
 License: LGPL
-Group: Development/Libraries
+Group: Development/C
 Source: %{name}-%{version}.tar.bz2
 BuildRequires: dbus-devel 
 BuildRequires: pkgconfig
