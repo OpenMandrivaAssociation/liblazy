@@ -11,6 +11,7 @@ Group: Development/C
 Source: %{name}-%{version}.tar.bz2
 BuildRequires: dbus-devel 
 BuildRequires: pkgconfig
+BuildRoot:      %{_tmppath}/%{name}-%{version}-build
 
 %description
 Liblazy is a simple and easy to use library that provides convenient
