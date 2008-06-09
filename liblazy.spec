@@ -33,8 +33,12 @@ Liblazy is a simple and easy to use library that provides convenient
 functions for sending messages over the D-Bus daemon, querying
 information from HAL or asking PolicyKit for a privilege.
 
+%if %mdkversion < 200900
 %post -p /sbin/ldconfig
+%endif
+%if %mdkversion < 200900
 %postun -p /sbin/ldconfig
+%endif
 
 %files -n %{lib_name}
 %defattr(-,root,root)
