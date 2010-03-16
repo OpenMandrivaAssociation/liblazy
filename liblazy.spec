@@ -5,7 +5,7 @@
 Name: liblazy
 Summary: Liblazy - D-Bus methods provided for convenience
 Version: 0.2
-Release: %mkrel 3
+Release: %mkrel 4
 License: LGPL
 Group: Development/C
 Source: %{name}-%{version}.tar.bz2
