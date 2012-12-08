@@ -61,7 +61,6 @@ information from HAL or asking PolicyKit for a privilege.
 %files -n %{lib_name_devel}
 %defattr(-,root,root)
 %_libdir/liblazy.so
-%_libdir/liblazy.la
 %_includedir/liblazy.h
 %_libdir/pkgconfig/*.pc
 
@@ -83,4 +82,50 @@ make DESTDIR=%buildroot install
 
 %clean
 rm -rf %buildroot 
+
+
+
+%changelog
+* Mon May 02 2011 Oden Eriksson <oeriksson@mandriva.com> 0.2-6mdv2011.0
++ Revision: 661480
+- mass rebuild
+
+* Sun Nov 28 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2-5mdv2011.0
++ Revision: 602566
+- rebuild
+
+* Tue Mar 16 2010 Oden Eriksson <oeriksson@mandriva.com> 0.2-4mdv2010.1
++ Revision: 520877
+- rebuilt for 2010.1
+
+* Wed Sep 02 2009 Christophe Fergeau <cfergeau@mandriva.com> 0.2-3mdv2010.0
++ Revision: 425590
+- rebuild
+
+* Tue Jun 17 2008 Thierry Vignaud <tv@mandriva.org> 0.2-2mdv2009.0
++ Revision: 222919
+- rebuild
+
+  + Pixel <pixel@mandriva.com>
+    - do not call ldconfig in %%post/%%postun, it is now handled by filetriggers
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+* Sat Dec 22 2007 Helio Chissini de Castro <helio@mandriva.com> 0.2-1mdv2008.1
++ Revision: 136759
+- Fix group
+- New upstream version of liblazy. Required for new kickoff menu
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+* Fri Apr 27 2007 Helio Chissini de Castro <helio@mandriva.com> 0.1.1-3mdv2008.0
++ Revision: 18668
+- Missing requires
+
+* Thu Apr 26 2007 Helio Chissini de Castro <helio@mandriva.com> 0.1.1-2mdv2008.0
++ Revision: 18416
+- import liblazy-0.1.1-2mdv2008.0
+
 
