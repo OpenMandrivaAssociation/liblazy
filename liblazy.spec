@@ -5,7 +5,7 @@
 Summary:	Liblazy - D-Bus methods provided for convenience
 Name:		liblazy
 Version:	0.2
-Release:	12
+Release:	13
 License:	LGPLv2
 Group:		Development/C
 Source0:	%{name}-%{version}.tar.bz2
