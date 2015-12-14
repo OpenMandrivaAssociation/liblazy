@@ -2,6 +2,8 @@
 %define libname	%mklibname lazy %{major}
 %define devname	%mklibname lazy -d
 
+%define _disable_lto 1
+
 Summary:	Liblazy - D-Bus methods provided for convenience
 Name:		liblazy
 Version:	0.2
