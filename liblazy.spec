@@ -11,6 +11,11 @@ Release:	17
 License:	LGPLv2
 Group:		Development/C
 Source0:	%{name}-%{version}.tar.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(dbus-1)
 
 %description
